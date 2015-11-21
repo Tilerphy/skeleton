@@ -1,11 +1,25 @@
 <div class="issuePanelContainer">
 <div class="mod-content">
-    <h1>bla</h1>
-
     <table class="aui">
-	#foreach( $entry in $people.entrySet() )
-	<h1>$entry.getKey()</h1>
- 	#end
-    	</table>
+	    <thead>
+	        <tr>
+	            <th id="name">Name</th>
+	            <th id="lastupdated">Last Updated</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+			#foreach( $entry in $jobs.entrySet() )
+			<tr>
+				<td>
+					$entry.getKey()
+				</td>
+				<td>
+					$entry.getValue()
+				</td>
+			</tr>
+		 	#end
+	    </tbody>
+
+    </table>
 </div>
 </div>
