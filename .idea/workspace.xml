@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9e0293-7cf9-46c9-9a38-709b4e44f528" name="Default" comment="" />
+    <list default="true" id="cd9e0293-7cf9-46c9-9a38-709b4e44f528" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,16 +39,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRoleIssueTabPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRoleIssueTabPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jiradev/jira/plugins/panels/issue/UserRoleIssueTabPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4992272">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
                 <element signature="e#1452#1453#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skeleton-effective-pom.xml" pinned="false" current-in-tab="true">
+        <entry file="mock:///skeleton-effective-pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33277026">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,6 +115,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -325,7 +340,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.59310347" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -760,12 +775,12 @@
       <created>1448051029515</created>
       <option name="number" value="Default" />
       <updated>1448051029515</updated>
-      <workItem from="1448051031418" duration="8555000" />
+      <workItem from="1448051031418" duration="9278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8555000" />
+    <option name="totallyTimeSpent" value="9278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -897,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jiradev/jira/plugins/panels/issue/UserRoleIssueTabPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4992272">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
@@ -983,7 +998,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: xml-apis:xml-apis:1.0.b2</last-edited>
+          <last-edited>Maven: jaxen:jaxen:1.0-FCS</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
