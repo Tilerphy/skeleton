@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="skeleton"/>
+  <web-item name="Jiradev Help Menu" i18n-name-key="jiradev-help-menu.name" key="jiradev-help-menu" section="system.top.navigation.bar" weight="1000">
+    <description key="jiradev-help-menu.description">The Jiradev Help Menu Plugin</description>
+    <label key="jiradev-help-menu.label"/>
+    <link linkId="jiradev-help-menu-link">default.jspa</link>
+  </web-item>
+  <web-section name="Internal Help Web Section" i18n-name-key="internal-help-web-section.name" key="internal-help-web-section" location="jiradev-helpmenu-link" weight="1000">
+    <description key="internal-help-web-section.description">The Internal Help Web Section Plugin</description>
+    <label key="internal-help-web-section.label"/>
+  </web-section>
+  <web-item name="Company Help Link" i18n-name-key="company-help-link.name" key="company-help-link" section="jiradev-helpmenu-link/internal-help-web-section" weight="1000">
+    <description key="company-help-link.description">The Company Help Link Plugin</description>
+    <label key="company-help-link.label"/>
+    <link linkId="company-help-link-link">http://www.jiradev.com/aboutme.html</link>
+  </web-item>
+  <web-section name="External Help" i18n-name-key="external-help.name" key="external-help" location="jiradev-helpmenu-link" weight="1000">
+    <description key="external-help.description">The External Help Plugin</description>
+    <label key="external-help.label"/>
+  </web-section>
+  <web-item name="Atlassian Answers Link" i18n-name-key="atlassian-answers-link.name" key="atlassian-answers-link" section="jiradev-helpmenu-link/external-help-web-section" weight="1000">
+    <description key="atlassian-answers-link.description">The Atlassian Answers Link Plugin</description>
+    <label key="atlassian-answers-link.label"/>
+    <link linkId="atlassian-answers-link-link">https://answers.atlassian.com/</link>
+  </web-item>
+  <project-tabpanel key="user-role-project-tab-panel" name="User Role Project Tab Panel" i18n-name-key="user-role-project-tab-panel.name" class="com.jiradev.jira.plugins.panels.project.UserRoleProjectTabPanel">
+    <description key="user-role-project-tab-panel.description">The User Role Project Tab Panel Plugin</description>
+    <label key="user-role-project-tab-panel.label"/>
+    <order>10</order>
+    <resource type="velocity" name="view" location="templates/tabpanels/user-role-project-tab-panel.vm"/>
+  </project-tabpanel>
+  <issue-tabpanel key="user-role-issue-tab-panel" name="User Role Issue Tab Panel" i18n-name-key="user-role-issue-tab-panel.name" class="com.jiradev.jira.plugins.panels.issue.UserRoleIssueTabPanel">
+    <description key="user-role-issue-tab-panel.description">The User Role Issue Tab Panel Plugin</description>
+    <label key="user-role-issue-tab-panel.label"></label>
+    <order>10</order>
+    <resource type="velocity" name="view" location="templates/tabpanels/user-role-issue-tab-panel.vm"/>
+  </issue-tabpanel>
+</atlassian-plugin>

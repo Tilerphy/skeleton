@@ -1,0 +1,11 @@
+<div class="issuePanelContainer">
+<div class="mod-content">
+    <h1>bla</h1>
+
+    <table class="aui">
+	#foreach( $entry in $people.entrySet() )
+	<h1>$entry.getKey()</h1>
+ 	#end
+    	</table>
+</div>
+</div>
